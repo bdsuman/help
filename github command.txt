@@ -1,5 +1,6 @@
 https://stackoverflow.com/questions/8775850/how-do-i-add-files-and-folders-into-github-repos
 
+https://stackoverflow.com/questions/70038069/how-to-upload-project-from-local-file-system-to-gitlab
 
     git init
     git add ProjectFolderName
