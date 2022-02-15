@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<div class="container">
+		<form method="post" class="form-horizontal" role="form">
+          
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Time</label>
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-info"> <span id="amount_of_val">days</span> <i class="fa-solid fa-up-down"></i></button>
+                    <br>
+                    <span class="optionVal">hours</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="optionVal">days</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="optionVal">month</span>
+                </div>
+            </div>
+
+		</form>
+	</div>
+    <script type="text/javascript">
+        $(document).on('click', '.optionVal', function () {
+            var span_val_find = $("#amount_of_val"),
+                money_value = span_val_find.html();
+                //alert(money_value);
+               // var quantity = $(this).find(".optionVal").html();
+                var quantity = $(this).html();
+              //  alert(quantity)
+
+                span_val_find.html(quantity);
+                span_val_find.show();
+           
+        });
+
+        /*$(document).ready(function () {
+         
+        var money_span = $("#amount_of_val"),
+            money_value = money_span.html(),
+            money = '';
+           // alert(money_value);
+
+            $('.optionVal').click(function (event) {
+              //  event.preventDefault();
+                //$('.optionVal').html().val();
+                
+                selected = $('.optionVal').html();
+                alert(selected);
+                money_value = selected;
+                money_span.html(money_value);
+                money_span.show();
+            });
+        });*/
+    </script>
+</body>
+</html>
