@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=c7-OzF63hgI
+----------------------------------------------
+Automatically connect to the Internet/network connection at Windows startup Procedure :
+1. Open a notepad
+2. type "rasdial Broadband connection name Username Password"
+3. save this file as .bat format
+4. open your Run Command and paste this line "%programdata%\Microsoft\Windows\Start Menu\Programs\Startup"
+5. Now open a older
+6. Copy this .bat file and paste here.
