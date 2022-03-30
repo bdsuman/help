@@ -1,0 +1,36 @@
+https://stackoverflow.com/questions/18161083/jquery-filter-list-without-case-sensitive
+ter "X" in search box it displays both 1 and 3. I added the code below but it match the case sensitive also.
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    function filter(element) {
+        var value = $(element).val();
+        $("#theList > li").each(function() {
+            if ($(this).text().search(value) > -1) {
+                $(this).show();
+            }
+            else {
+                $(this).hide();
+            }
+        });
+    }
+</script>
+</head>
+<body>
+<input type="text" onkeyup="filter(this)" />
+<ul id="theList">
+    <li>xxvxvxx</li>
+    <li>yyyyyyyyyy</li>
+    <li>rrrrrrrrrr</li>
+    <li>vvvvvvvvvvv</li>
+    <li>xcvcvdfsdf</li>
+    <li>hkjhkhjkh</li>
+    <li>xzfgfhfgh</li>
+</ul>
+
+</body>
+</html>
