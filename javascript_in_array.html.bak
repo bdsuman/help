@@ -1,0 +1,29 @@
+<!--
+https://stackoverflow.com/questions/784012/javascript-equivalent-of-phps-in-array
+
+https://stackoverflow.com/questions/37364737/javascript-in-array
+
+-->
+
+<script>
+
+	function inArray(needle, haystack) {
+		var length = haystack.length;
+		for(var i = 0; i < length; i++) {
+			if(haystack[i] == needle) return true;
+		}
+		return false;
+	} 
+		$(document).ready(function(){
+			
+			
+				var bmGroup = ['BM(Accounting)','BM(Banking)','BM(Computer)','BM(Human Resources)'];
+
+				   if(inArray(Group, bmGroup)) {
+						alert('Found'+Group);
+					}else{
+						alert(Group+'Not Found');
+					}
+					
+		})
+</script>
