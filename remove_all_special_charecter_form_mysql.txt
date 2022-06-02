@@ -1,0 +1,1 @@
+UPDATE product SET product = REGEXP_REPLACE(product, '[^0-9a-zA-Z ]', '');
