@@ -1,0 +1,1 @@
+SELECT COUNT(pathology_test_name),pathology_test_name FROM `pathology_test` GROUP by pathology_test_name  HAVING COUNT(id)>1;
